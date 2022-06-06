@@ -1,10 +1,6 @@
 import React from 'react';
-<<<<<<< HEAD
-import Suggestion from './Suggestion';
-=======
 import { getHeaders } from './utils';
 import Suggestion from './Suggestion'
->>>>>>> de436f162ab0c7e54b57c03bf1a25fb47c0a1fda
 
 class Suggestions extends React.Component {
 
