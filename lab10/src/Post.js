@@ -2,6 +2,7 @@ import React from 'react';
 import { getHeaders } from './utils';
 import Bookmark from './Bookmark';
 import LikeButton from './LikeButton';
+import AddComment from './AddComment';
 
 class Post extends React.Component {
   

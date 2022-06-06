@@ -1,4 +1,5 @@
 import React from 'react';
+import Suggestion from './Suggestion';
 
 class Suggestions extends React.Component {
 
