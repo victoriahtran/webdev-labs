@@ -10,7 +10,7 @@ class Profile extends React.Component {
         this.fetchProfile = this.fetchProfile.bind(this)
         // this.componentDidMount = this.componentDidMount.bind(this)
         // this.componentDidMount()
-        console.log('Profile component created');
+        // console.log('Profile component created');
     }
 
     fetchProfile() {
@@ -26,7 +26,7 @@ class Profile extends React.Component {
 
     componentDidMount() {
         this.fetchProfile()
-        console.log('Profile component mounted');
+        // console.log('Profile component mounted');
     }
 
     render() {
