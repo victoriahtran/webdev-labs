@@ -16,9 +16,9 @@ class Story extends React.Component {
     render () {
         const story = this.state.story
         return (
-            <div class="story">
+            <div className="story">
                 <img src={ story.user.thumb_url } alt="User's profile picture in story"/>
-                <div class="storyuser">{ story.user.username }</div>
+                <div className="storyuser">{ story.user.username }</div>
             </div>
         );
     }

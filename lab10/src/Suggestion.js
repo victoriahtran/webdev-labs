@@ -10,6 +10,7 @@ class Suggestion extends React.Component {
             follow_id : null}
         this.follow = this.follow.bind(this)
         this.unfollow = this.unfollow.bind(this)
+        this.toggleFollow = this.toggleFollow.bind(this)
     }
 
     componentDidMount() {
@@ -28,11 +29,11 @@ class Suggestion extends React.Component {
 
     follow(id){
         const senddata = {"user_id": id}
-        fetch(("/api/following/", {
+        fetch("/api/following/", {
             method: "POST",
             headers: getHeaders(),
             body: JSON.stringify(senddata)
-        }))
+        })
         .then(response => response.json())
         .then(data=> {
             this.setState({
@@ -58,11 +59,11 @@ class Suggestion extends React.Component {
     render() {
         const s = this.state.s
 
-        return (<div class="suggestion">
+        return (<div className="suggestion">
         <img src={s.thumb_url} alt="thumbnail" />
         <div>
-            <p class="username">{s.username}</p>
-            <p class="suggestion-text">suggested for you</p>
+            <p className="username">{s.username}</p>
+            <p className="suggestion-text">suggested for you</p>
         </div>
         <div>
             <button 

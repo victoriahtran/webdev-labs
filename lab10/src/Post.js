@@ -77,6 +77,15 @@ class Post extends React.Component {
                     </div>
                     <p>{ post.caption }</p>
                 </div>
+                <button class="more-comments"  id="more-comments${post.id}"
+            data-post-id = "${post.id}" onclick="showModal(event)" >View all { post.comments.length } comments</button>
+               {post.comments.length >= 1
+                ? <div className="comment">
+                <span className="username">{ post.comments[0].user.username }</span>
+                <span className="commentcontent">{ post.comments[0].text }</span>
+                </div>
+                : ``}
+                <AddComment postId = {post.id} requeryPost = {this.requeryPost} />
             </section> 
         );     
     }
