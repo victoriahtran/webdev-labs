@@ -13,6 +13,7 @@ class Navbar extends React.Component {
 
     componentDidMount() {
         // fetch posts and then set the state
+        this.fetchProfile()
         console.log("Navbar component mounted")
     }
 
@@ -23,6 +24,8 @@ class Navbar extends React.Component {
         })
             .then(response => response.json())
             .then(data => {
+                console.log("navbar")
+                console.log(data)
                 this.setState({ profile: data })
             })
     }
