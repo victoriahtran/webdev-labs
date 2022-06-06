@@ -1,0 +1,21 @@
+Partners: Victoria Tran & Dimitri Hatzisavas
+
+1. Were React’s compilation warning/error messages helpful?
+
+Yes, I think React's compilation warning/error messages were helpful.
+They were self-explanatory and directed us to where the errors were resulting from.
+
+2. Did React’s compilation warning/error messages prompt you to consider making your site more accessible?
+
+Yes, the compilation warning/error messages did prompt us to make our site more accessible.
+
+3. Did you consider conducting accessibility testing on your lab assignment? Why or why not?
+
+Yes, we did consider conducting accessibility testing on the assignment in order to make sure that our website was accessible.
+For this assignment, we checked to see that the buttons were tabbable, that event handlers could be triggered with enter/return,
+and that the focus was on the correct spot after certain events (e.g. adding a comment).
+
+4. If you tested your site for accessibility and found issues, were you able to solve them? What did you do to try to solve them? What stopped you from successfully resolving or trying to resolve the issues?
+
+There were some minor issues, which we fixed by re-implementing the accessibility features from previous assignments.
+We modified them to fit with the constraints of React, and it worked out well.
