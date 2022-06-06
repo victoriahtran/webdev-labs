@@ -1,21 +1,40 @@
 import React from 'react';
+import { getHeaders } from './utils';
 
 class Profile extends React.Component {
 
     constructor(props) {
         super(props);
-        //initialization code here
-        console.log("Profile constructed")
+        // constructor logic
+        this.state = { profile : [] }
+        this.fetchProfile = this.fetchProfile.bind(this)
+        // this.componentDidMount = this.componentDidMount.bind(this)
+        // this.componentDidMount()
+        console.log('Profile component created');
+    }
+
+    fetchProfile() {
+        fetch('/api/profile', {
+            method: "GET",
+            headers: getHeaders()
+        })
+            .then(response => response.json())
+            .then(data => {
+                this.setState({ profile: data })
+            })
     }
 
     componentDidMount() {
-        // fetch posts and then set the state
-        console.log("Profile component mounted")
+        this.fetchProfile()
+        console.log('Profile component mounted');
     }
 
-    render () {
+    render() {
         return (
-            <header> Profile </header>
+            <div className="currentuser">
+                <img src={this.state.profile.image_url} alt="user profile pic" />
+                <div className="currentusername">{this.state.profile.username}</div>
+            </div>
         );
     }
 }
