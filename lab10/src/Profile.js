@@ -8,7 +8,13 @@ class Profile extends React.Component {
         // constructor logic
         this.state = { profile : [] }
         this.fetchProfile = this.fetchProfile.bind(this)
+<<<<<<< HEAD
         console.log('Profile component created');
+=======
+        // this.componentDidMount = this.componentDidMount.bind(this)
+        // this.componentDidMount()
+        // console.log('Profile component created');
+>>>>>>> de436f162ab0c7e54b57c03bf1a25fb47c0a1fda
     }
 
     fetchProfile() {
@@ -24,7 +30,7 @@ class Profile extends React.Component {
 
     componentDidMount() {
         this.fetchProfile()
-        console.log('Profile component mounted');
+        // console.log('Profile component mounted');
     }
 
     render() {

@@ -64,7 +64,7 @@ export function getHeaders () {
             'Content-Type': 'application/json',
             'Authorization': 'Bearer ' + access_token_cookie_js
         };
-        console.log(headers)
+        // console.log(headers)
     } else {
         console.error('Neither access_token_cookie nor csrf_access_token found')
     }

@@ -22,14 +22,14 @@ class Post extends React.Component {
         })
         .then(response => response.json())
         .then(data => {
-            console.log(data)
+            // console.log(data)
             this.setState({ post: data });
         });
     }
 
     componentDidMount() {
         // fetch posts and then set the state...
-        console.log("Posts component mounted")
+        // console.log("Posts component mounted")
         this.fetchPosts();
     }
 

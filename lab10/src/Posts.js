@@ -14,7 +14,7 @@ class Posts extends React.Component {
 
     componentDidMount() {
         // fetch posts and then set the state...
-        console.log("Posts component mounted")
+        // console.log("Posts component mounted")
         this.fetchPosts();
     }
 
